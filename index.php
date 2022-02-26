@@ -8,6 +8,14 @@
     </head>
     <body>
         <h1>Blog App</h1>
-        <a href="#">create a blog</a>
+        <a href="new.php">create a blog</a>
+
+        <!-- 記事一覧表示 -->
+        <?php
+            if (!empty($_POST['your_name'])) {
+                echo $_GET['your_name'];
+            }
+        ?>
+        <!-- 記事一覧表示 -->
     </body>
 </html>
